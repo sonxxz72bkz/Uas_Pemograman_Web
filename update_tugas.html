@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Tugas Otomatis</title>
+    <link rel="stylesheet" href="style2.css">
+    <script>
+        // Simulasi update tugas otomatis
+        function updateTugas() {
+            const daftarTugas = document.getElementById('daftar-tugas');
+            const tugasBaru = document.createElement('li');
+            tugasBaru.innerHTML = `<b>Tugas Baru:</b> Membuat laporan hasil belajar (Deadline: 15 Januari 2025)`;
+            tugasBaru.style.color = "#ff4c60"; // Warna merah untuk menonjolkan tugas baru
+            daftarTugas.appendChild(tugasBaru);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Update Tugas Otomatis</h1>
+        <p>Pembaruan otomatis tugas yang ditambahkan oleh instruktur.</p>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="manajemen_tugas.html">Manajemen Tugas</a></li>
+                <li><a href="materi_belajar.html">Materi Belajar</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section>
+                <h2>Daftar Tugas Anda</h2>
+                <ul id="daftar-tugas">
+                    <li><b>Tugas 1:</b> Membaca Bab 1-3 Buku Panduan (Deadline: 10 Januari 2025)</li>
+                    <li><b>Tugas 2:</b> Mengisi kuesioner pelatihan (Deadline: 12 Januari 2025)</li>
+                </ul>
+                <button class="btn" onclick="updateTugas()">Update Tugas</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
